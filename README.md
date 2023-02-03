@@ -1,1 +1,1 @@
-# covid cases web map
+# Web Map Application
