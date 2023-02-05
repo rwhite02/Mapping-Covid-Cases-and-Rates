@@ -4,12 +4,12 @@ let map = new mapboxgl.Map({
 container: 'map', // container ID
 style: 'mapbox://styles/mapbox/dark-v10',
 zoom: 5, // starting zoom
-center: [138, 38] // starting center
+center: [-95, 40] // starting center
 });
 
-const grades = [4, 5, 6],
-colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'],
-radii = [5, 15, 20];
+const grades = [200, 500, 2000, 5000],
+colors = ['rgb(239, 243, 255)', 'rgb(189, 215, 231)', 'rgb(107, 174, 214)', 'rgb(33, 133, 181)'],
+radii = [5, 10, 20, 35];
 
 //load data to the map as new layers.
 //map.on('load', function loadingData() {
@@ -17,15 +17,15 @@ map.on('load', () => { //simplifying the function statement: arrow with brackets
 
 // when loading a geojson, there are two steps
 // add a source of the data and then add the layer out of the source
-map.addSource('earthquakes', {
+map.addSource('us-covid-2020-counts', {
     type: 'geojson',
-    data: 'assets/earthquakes.geojson'
+    data: 'assets/us-covid-2020-counts.json'
 });
 
 map.addLayer({
-        'id': 'earthquakes-point',
+        'id': 'covid-point',
         'type': 'circle',
-        'source': 'earthquakes',
+        'source': 'us-covid-2020-counts',
         'minzoom': 5,
         'paint': {
             // increase the radii of the circle as the zoom level and dbh value increases
@@ -64,7 +64,7 @@ map.addLayer({
 
 
 // click on tree to view magnitude in a popup
-map.on('click', 'earthquakes-point', (event) => {
+map.on('click', 'covid-point', (event) => {
     new mapboxgl.Popup()
         .setLngLat(event.features[0].geometry.coordinates)
         .setHTML(`<strong>Magnitude:</strong> ${event.features[0].properties.mag}`)
