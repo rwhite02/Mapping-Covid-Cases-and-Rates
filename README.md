@@ -10,7 +10,7 @@
 
 [map2.html] is a proportional symbol map that shows the number of COVID cases in each US county. Each county has a bubble around it and the cases number will dictate the size and color of that bubble. Counties with higher case numbers will be larger and a darker color, and counties with lower case numbers will be smaller and lighter. The data used in this map is from New York Times.
 
-![](propsymbol.png)
+![](imgs/propsymbol.png)
 
 [map1.html]: https://rwhite02.github.io/Web-Map-Application/map1.html
 [map2.html]: https://rwhite02.github.io/Web-Map-Application/map2.html
