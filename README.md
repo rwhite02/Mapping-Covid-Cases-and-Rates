@@ -12,3 +12,4 @@
 
 
 [map1.html]: https://rwhite02.github.io/Web-Map-Application/map1.html
+[map2.html]: https://rwhite02.github.io/Web-Map-Application/map2.html
