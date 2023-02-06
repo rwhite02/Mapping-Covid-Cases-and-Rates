@@ -86,7 +86,7 @@
     <div id="map"></div>
     <div id="legend"></div>
     <div id="title">
-        Covid Cases in the US
+        Covid Cases in the US by County
     </div>
     <div id="subtitle">
         2020
@@ -109,7 +109,7 @@
 
             map.addSource('us-covid-2020-counts', {
                 type: 'geojson',
-                data: 'assets/us-covid-2020-counts.json'
+                data: 'assets/us-covid-2020-counts.geojson'
             });
 
             map.addLayer({
