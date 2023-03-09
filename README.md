@@ -2,7 +2,7 @@
 
 ## Choropleth Map
 
-[map1.html] is a choropleth map that shows each US county's COVID infection rate. This map is interactive by utilizing JavaScript so that when you hover your mouse over a certain county, it will show that county's infection rate. This map is ideal for looking into the infection rates within each county, since the infection rate value is directly accessible due to the interactive aspect using JavaScript. HTML and CSS were used to choose color schemes, map size, and text boxes. JavaScript was also used to load the mapbox basemap. The population data for calculating the case rates are from the 2018 ACS 5 year estimates.
+[https://rwhite02.github.io/Mapping-Covid-Cases-and-Rates/map1.html] is a choropleth map that shows each US county's COVID infection rate. This map is interactive by utilizing JavaScript so that when you hover your mouse over a certain county, it will show that county's infection rate. This map is ideal for looking into the infection rates within each county, since the infection rate value is directly accessible due to the interactive aspect using JavaScript. HTML and CSS were used to choose color schemes, map size, and text boxes. JavaScript was also used to load the mapbox basemap. The population data for calculating the case rates are from the 2018 ACS 5 year estimates.
 
 ![](imgs/choropleth.png)
 
